@@ -120,6 +120,14 @@
 (it "+ are excluded"
   (should= expected-orders (fraud-prevention.core/format-emails orders))))
 
+(describe "should treat rd. and st. the same"
+  (before (def orders  [{:street "123 sesame st."},
+                        {:street "123 sesame rd."}])
+    (def expected-orders [{:street "123 sesame street"},
+                          {:street "123 sesame road"}]))
+  (it "abbreviations are replaced with full"
+    (should= expected-orders (fraud-prevention.core/format-streets orders))))
+
 
 
 

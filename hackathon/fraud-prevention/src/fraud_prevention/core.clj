@@ -20,5 +20,18 @@
 (defn format-emails [orders]
   (mapv format-email orders))
 
+(defn fix-street [street]
+  (str/replace % #"st\.", "street"))
+
+(defn fix-road [street]
+  (str/replace % #"rd\.", "road"))
+
+(defn format-street [order]
+  (update-in order [:street] #((str/replace % #"st\.", "street")))
+  )
+
+(defn format-streets [orders]
+  (mapv format-street orders))
+
 (defn find-fradulent-orders [orders]
   [1])
