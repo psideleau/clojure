@@ -31,6 +31,7 @@
 
 (defn mex [values]
   (let [sorted-values (sort (vec values))]
+  ;  (println "getting max for " sorted-values)
     (if-not (= 0 (first sorted-values))
       0
       (find-min 1 (rest sorted-values))
@@ -38,23 +39,80 @@
 
 (def grundy
   (memoize (fn [val]
+  (do
+    ;(println "getting grundy for " val)
     (cond
       (= 0 val) 0
       (= 1 val) 0
       (= 2 val) 0
-      (= 3 val)  (mex (set [(+ (grundy 2) (grundy 1))]))
-      (= 4 val)  (mex (set [(+ (grundy 3) (grundy 1))]))
-      (= 5 val)  (mex (s/union (set [(+ (grundy 4) (grundy 1))])(set [(+ (grundy 3) (grundy 2))])))
       :else
-       (let [partions-of-val (s-partition val)]
-         (mex (set (map (fn [partition] (reduce + (map #(grundy %) partition))) partions-of-val)))
+
+      (let [partions-of-val (s-partition val)]
+     ;   (println "partition of " val " is: "  partions-of-val)
+         (mex (set (map (fn [partition] (reduce bit-xor (map grundy partition))) partions-of-val)))
          )
-    ))))
+    )))))
+
+(def grundy-map {0 0
+                 1 0
+                 2 0
+                 3 1
+                 4 0
+                 5 2
+                 6 3
+                 7 4
+                 8 0
+                 9 5
+                 10 6
+                 11 7
+                 12 8
+                 13 9
+                 14 10
+                 15 11
+                 16 12
+                 17 13
+                 18 14
+                 19 15
+                 20 16
+                 21 17
+                 22 18
+                 23 19
+                 24 20
+                 25 21
+                 26 22
+                 27 23
+                 28 24
+                 29 25
+                 30 26
+                 31 27
+                 32 28
+                 33 29
+                 34 30
+                 35 31
+                 36 32
+                 37 33
+                 38 34
+                 39 35
+                 40 36
+                 41 37
+                 42 38
+                 43 39
+                 44 40
+                 45 41
+                 46 42
+                 47 43
+                 48 44
+                 49 45
+                 50 46
+                 })
 
 (defn find-nim-sum [v]
-  (do
-    ;(println (mapv grundy v))
-    (reduce bit-xor (mapv grundy v))))
+  (let [grundy-values (sort (mapv byte (mapv #(get grundy-map %) v)))]
+   ; (println "nim sizes" (count grundy-values))
+   ; (println grundy-values)
+    ;(reduce bit-xor (mapv grundy v))))
+    (reduce bit-xor grundy-values)))
+
 
 
 
@@ -66,6 +124,8 @@
 
 (defn play-games [users, piles, current-play-idx]
   (let [nim-sum (find-nim-sum piles)]
+   ; (println "pile size" (count piles))
+  ;  (println "nim-sum" nim-sum)
     (cond
      (game-over? piles) (get users 1)
       (= 0 nim-sum) (get users 1)

@@ -19,6 +19,14 @@
     (should= 4 (stone-piles.core/grundy 7)))
   (it "grundy of 8"
     (should= 0 (stone-piles.core/grundy 8)))
+  (it "grundy of 9"
+    (should= 5 (stone-piles.core/grundy 9)))
+  (it "grundy of 10"
+    (should= 6 (stone-piles.core/grundy 10)))
+
+ ; (it "grundy of 32324"
+;    (should= 7 (dotimes [n 51] (println n (grundy n))))
+;  )
   )
 
 (describe "mex"
@@ -64,5 +72,5 @@
   (let [game {:users ["ALICE", "BOB"], :piles [8]}]
    (should= "BOB" (stone-piles.core/play-game game)))))
   (it "bob wins last case"
-    (let [game {:users ["ALICE", "BOB"], :piles [30 47 20 37]}]
+    (let [game {:users ["ALICE", "BOB"], :piles [24 7 3 41 21 16 27 25 41 21 40 24 40 26 33]}]
       (should= "BOB" (stone-piles.core/play-game game)))))
