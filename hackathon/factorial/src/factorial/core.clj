@@ -8,6 +8,6 @@
 (defn factorial [n]
   (run-factorial n n))
 
-(defn -main []
+l
   (let [n (Integer/parseInt (read-line)) ]
     (println (String/valueOf(factorial n)))))

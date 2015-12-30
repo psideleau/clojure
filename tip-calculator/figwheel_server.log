@@ -1,0 +1,145 @@
+Figwheel: focusing on build-ids (tip-calculator)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:target/figwheel_temp/tip-calculator/figwheel/connect.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__3138.invoke (compiler.cljc:1344)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1306)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1381)
+    cljs.closure$compile_dir.invoke (closure.clj:438)
+    cljs.closure$eval3582$fn__3583.invoke (closure.clj:478)
+    cljs.closure$eval3534$fn__3535$G__3525__3542.invoke (closure.clj:383)
+    cljs.closure$eval3595$fn__3596.invoke (closure.clj:492)
+    cljs.closure$eval3534$fn__3535$G__3525__3542.invoke (closure.clj:383)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1674)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__15804.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__15850.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__15801.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__15604.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__15610.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__15610.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__15613.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__15607.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__15625.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__15711$state_machine__9517__auto____15712$fn__15717.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__15711$state_machine__9517__auto____15712.invoke (auto.clj:178)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+clojure.lang.ExceptionInfo: failed compiling file:target/figwheel_temp/tip-calculator/figwheel/connect.cljs
+ at clojure.core$ex_info.invoke (core.clj:4593)
+    cljs.compiler$compile_file$fn__3138.invoke (compiler.cljc:1344)
+    cljs.compiler$compile_file.invoke (compiler.cljc:1306)
+    cljs.compiler$compile_root.invoke (compiler.cljc:1381)
+    cljs.closure$compile_dir.invoke (closure.clj:438)
+    cljs.closure$eval3582$fn__3583.invoke (closure.clj:478)
+    cljs.closure$eval3534$fn__3535$G__3525__3542.invoke (closure.clj:383)
+    cljs.closure$eval3595$fn__3596.invoke (closure.clj:492)
+    cljs.closure$eval3534$fn__3535$G__3525__3542.invoke (closure.clj:383)
+    clojurescript_build.core.CompilableSourcePaths/fn (core.clj:20)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojurescript_build.core.CompilableSourcePaths._compile (core.clj:19)
+    cljs.closure$build.invoke (closure.clj:1674)
+    clojurescript_build.core$build_source_paths_STAR_.invoke (core.clj:160)
+    figwheel_sidecar.auto_builder$default_build_options$fn__15804.invoke (auto_builder.clj:61)
+    figwheel_sidecar.auto_builder$insert_figwheel_connect_script$fn__15850.invoke (auto_builder.clj:201)
+    figwheel_sidecar.auto_builder$warning$fn__15801.invoke (auto_builder.clj:57)
+    clojurescript_build.auto$time_build$fn__15604.invoke (auto.clj:56)
+    clojurescript_build.auto$after$fn__15610.invoke (auto.clj:65)
+    clojurescript_build.auto$after$fn__15610.invoke (auto.clj:65)
+    clojurescript_build.auto$error$fn__15613.invoke (auto.clj:72)
+    clojurescript_build.auto$before$fn__15607.invoke (auto.clj:61)
+    clojurescript_build.auto$make_conditional_builder$fn__15625.invoke (auto.clj:104)
+    clojure.core$mapv$fn__6727.invoke (core.clj:6616)
+    clojure.lang.PersistentVector.reduce (PersistentVector.java:333)
+    clojure.core$reduce.invoke (core.clj:6518)
+    clojure.core$mapv.invoke (core.clj:6616)
+    clojurescript_build.auto$autobuild_STAR_$fn__15711$state_machine__9517__auto____15712$fn__15717.invoke (auto.clj:187)
+    clojurescript_build.auto$autobuild_STAR_$fn__15711$state_machine__9517__auto____15712.invoke (auto.clj:178)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 5.952 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /tip_calculator/client.js
+Figwheel: focusing on build-ids (tip-calculator)
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.095 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/goog/deps.js
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /tip_calculator/client.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 2.202 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /tip_calculator/client.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.134 seconds.[0m
+notifying browser that file changed:  /tip_calculator/client.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.162 seconds.[0m
+notifying browser that file changed:  /tip_calculator/client.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.144 seconds.[0m
+notifying browser that file changed:  /tip_calculator/client.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.206 seconds.[0m
+notifying browser that file changed:  /tip_calculator/client.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.234 seconds.[0m
+notifying browser that file changed:  /tip_calculator/client.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.135 seconds.[0m
+notifying browser that file changed:  /tip_calculator/client.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.174 seconds.[0m
+notifying browser that file changed:  /tip_calculator/client.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.151 seconds.[0m
+notifying browser that file changed:  /tip_calculator/client.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.159 seconds.[0m
+notifying browser that file changed:  /tip_calculator/client.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.201 seconds.[0m
+notifying browser that file changed:  /tip_calculator/client.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+WARNING: No such namespace: fw, could not locate fw.cljs, fw.cljc, or Closure namespace "" at line 4 src/cljs/tip_calculator/client.cljs
+WARNING: Use of undeclared Var fw/watch-and-reload at line 4 src/cljs/tip_calculator/client.cljs
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.184 seconds.[0m
+notifying browser that file changed:  /tip_calculator/client.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.189 seconds.[0m
+notifying browser that file changed:  resources/public/js/out/cljs_deps.js
+notifying browser that file changed:  /tip_calculator/client.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.152 seconds.[0m
+notifying browser that file changed:  /tip_calculator/client.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.199 seconds.[0m
+notifying browser that file changed:  /tip_calculator/client.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.203 seconds.[0m
+notifying browser that file changed:  /tip_calculator/client.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 11 and column 1 on file /Users/paul_sideleau/Development/sourcecode/clojure/tip-calculator/src/cljs/tip_calculator/client.cljs, line 31, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[31mCompiling "resources/public/js/app.js" failed.[0m
+ERROR: EOF while reading, starting at line 11 and column 1 on file /Users/paul_sideleau/Development/sourcecode/clojure/tip-calculator/src/cljs/tip_calculator/client.cljs, line 31, column 1
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.146 seconds.[0m
+notifying browser that file changed:  /tip_calculator/client.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.241 seconds.[0m
+notifying browser that file changed:  /tip_calculator/client.js
+[0mCompiling "resources/public/js/app.js" from ["src/cljs"]...
+[32mSuccessfully compiled "resources/public/js/app.js" in 0.203 seconds.[0m
+notifying browser that file changed:  /tip_calculator/client.js
