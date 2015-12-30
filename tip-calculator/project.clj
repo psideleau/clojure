@@ -21,9 +21,10 @@
                                   [speclj "3.3.1"]]}}
   :plugins [[lein-ring "0.9.7"]
             [speclj "3.3.1"]
-            [lein-figwheel "0.4.1"]]
+            [lein-figwheel "0.4.1"]
+            [lein-cljsbuild "1.1.2"]]
   :cljsbuild {
-              :builds [ { :id "tip-calculator"
+              :builds [ { :id "test"
                          :source-paths ["src/cljs"]
                          :figwheel true
                          :compiler {:main "tip-calculator.client"
@@ -31,6 +32,7 @@
                                     :output-to "resources/public/js/app.js"
                                     :output-dir "resources/public/js/out"
                                     :optimizations :none
-                                    :source-map true} } ]
+                                    :source-map true} }
+                      ]
               }
   :test-paths ["spec"])
