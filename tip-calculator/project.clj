@@ -9,6 +9,8 @@
                  [compojure "1.4.0"]
                  [ring/ring-json "0.4.0"]
                  [ring/ring-defaults "0.1.5"]
+                 [org.clojure/java.jdbc "0.4.2"]
+                 [net.sourceforge.jtds/jtds "1.3.1"]
                  ;;ClojureScript
                  [org.clojure/clojurescript "1.7.122"]
                  [cljs-ajax "0.5.1"]

@@ -1,4 +1,5 @@
-figwheel_server.log 
+**/figwheel_server.log** 
+figwheel_server.log
 /target
 /lib
 /classes

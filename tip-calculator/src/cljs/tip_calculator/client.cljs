@@ -12,7 +12,7 @@
   (.log js/console "server responded...")
   (-> (sel1 :.fromServer)
       (dommy/set-text!
-        (str "Tip " (get response "tip-amount")))))
+        (str "Tip:" (get response "tip-amount") " Total:" (get response "total-amount")))))
 
 (defn error-handler [{:keys [status status-text]}]
   (.log js/console (str "something bad happened: " status " " status-text)))
