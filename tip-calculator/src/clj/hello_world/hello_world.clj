@@ -10,6 +10,21 @@
       (println msg))))
 
 
+(defn time-example []
+
+  (
+    let [
+         time (read-line)
+         format (java.text.SimpleDateFormat. "hh:mm:ssa")
+         format-military (java.text.SimpleDateFormat. "HH:mm:ss")
+         date  (.parse format time)
+         ]
+
+    (println (.format format-military date))
+
+    ))
+
+
 (defn count-characters []
   (do
     (print "What is the input string?")
